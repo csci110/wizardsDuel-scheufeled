@@ -47,8 +47,8 @@ class Spell extends Sprite {
     }
     handleSpaceBar() {
         let spell = new Spell();
-        spell.x = this.x + this.width;  // this sets the position of the spell object equal to
-        spell.y = this.y;  // the position of any object created from the PlayerWizard class
+        spell.x = this.x + this.width; 
+        spell.y = this.y; 
         this.name = "A spell cast by Marcus";
         this.setImage("marcusSpellSheet.png");
         this.angle = 0;
@@ -110,8 +110,6 @@ class Spell extends Sprite {
             }
             
         let spell = new Spell();
-        // This sets the position of the spell object equal to the position
-        // of any object created from the PlayerWizard class
         spell.x = this.x - this.width;
         spell.y = this.y;
         spell.name = "A spell cast by the Dark Wizard";
@@ -122,7 +120,6 @@ class Spell extends Sprite {
     }
 }
 
-// Creates/ends fireball
 class Fireball extends Sprite {
     constructor(deadSprite) {
         super();
