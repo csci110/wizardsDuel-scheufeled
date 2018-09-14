@@ -31,9 +31,9 @@ class PlayerWizard extends Sprite {
     }
      handleSpacebar() {
         let spell = new Spell();
-        let now = game.getTime(); // get the number of seconds since game start
-        spell.x = this.x + this.width; // this sets the position of the spell object equal to
-        spell.y = this.y; // the position of any object created from the PlayerWizard class
+        let now = game.getTime(); 
+        spell.x = this.x + this.width; 
+        spell.y = this.y; 
         spell.name = "A spell cast by Marcus";
         spell.setImage("marcusSpellSheet.png");
         spell.angle = 0;
